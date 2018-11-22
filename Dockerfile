@@ -1,5 +1,5 @@
 #
-# BIMserver 1.5.113 on latest Tomcat 8.5
+# BIMserver 1.5.117 on latest Tomcat 8.5
 #
 
 FROM tomcat:8.5
@@ -15,7 +15,7 @@ RUN mkdir /var/bimserver/home -p
 
 # Download BIMserver into /webapps for autodeploy
 
-RUN wget https://github.com/opensourceBIM/BIMserver/releases/download/v1.5.113/bimserverwar-1.5.113.war \
+RUN wget https://github.com/opensourceBIM/BIMserver/releases/download/v1.5.117/bimserverwar-1.5.117.war \
 	-O /var/www/localhost/ROOT.war
 
 
