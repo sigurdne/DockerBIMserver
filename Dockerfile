@@ -1,5 +1,5 @@
 #
-# BIMserver 1.5.150 on latest Tomcat 8.5
+# BIMserver 1.5.157 on latest Tomcat 8.5
 #
 
 FROM tomcat:8.5
@@ -15,12 +15,12 @@ RUN mkdir /var/bimserver/home -p
 
 # Download BIMserver into /webapps for autodeploy
 
-RUN wget https://github.com/opensourceBIM/BIMserver/releases/download/v1.5.150/bimserverwar-1.5.150.war \
+RUN wget https://github.com/opensourceBIM/BIMserver/releases/download/v1.5.157/bimserverwar-1.5.157.war \
 	-O /var/www/localhost/ROOT.war
 
 
 # For local build
-# ADD ./bimserverwar-1.5.150.war /var/www/localhost/ROOT.war
+# ADD ./bimserverwar-1.5.157.war /var/www/localhost/ROOT.war
 
 ENV CATALINA_OPTS="-Xms512M -Xmx1024M"
 
