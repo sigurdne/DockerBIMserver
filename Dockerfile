@@ -1,8 +1,8 @@
 #
-# BIMserver 1.5.157 on latest Tomcat 8.5
+# BIMserver 1.5.157 on latest Tomcat 9.0
 #
 
-FROM tomcat:8.5
+FROM tomcat:9.0
 MAINTAINER Sigurd Nes <sigurdne@online.no>
 
 
@@ -22,7 +22,7 @@ RUN wget https://github.com/opensourceBIM/BIMserver/releases/download/v1.5.157/b
 # For local build
 # ADD ./bimserverwar-1.5.157.war /var/www/localhost/ROOT.war
 
-ENV CATALINA_OPTS="-Xms512M -Xmx1024M"
+ENV CATALINA_OPTS="-Xms512M -Xmx8345M"
 
 
 ENV CATALINA_HOME /usr/local/tomcat
