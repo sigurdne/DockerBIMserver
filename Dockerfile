@@ -3,8 +3,7 @@
 #
 
 FROM tomcat:9.0
-MAINTAINER Sigurd Nes <sigurdne@online.no>
-
+LABEL maintainer="Sigurd Nes <sigurdne@online.no>"
 
 RUN echo "Europe/Oslo" > /etc/timezone
 RUN DEBIAN_FRONTEND=noninteractive dpkg-reconfigure -f noninteractive tzdata
